@@ -1,0 +1,12 @@
+
+<form action="/tasks" method="post">
+<%= form_for(@task) do |g| %>
+  <%= g.label :title %>
+  <%= g.text_field :title %>
+  <%= g.label :details %>
+  <%= g.text_field :details %>
+  <%= g.label :completed %>
+  <%= g.check_box :completed %>
+  <%= g.submit %>
+  <% end %>
+</form>
